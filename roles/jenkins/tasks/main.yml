@@ -1,6 +1,12 @@
 - name: create jenkins jobs
   community.general.jenkins_job:
     config: "{{ lookup('file', 'templates/test.xml') }}"
-    name: {{item}}
+    name: "{{item}}"
     url: http://172.31.89.234:8080
+    password: "{{jenkins_password}}"
+    username: admin
+  loop:
+    - frontend
+    - catalogue
+    - cart
 
