@@ -9,7 +9,7 @@
     name: test
     url: http://172.31.89.234:8080
     password: "{{jenkins_password}}"
-    username: admin
+    user: admin
   loop:
     - frontend
     - catalogue
