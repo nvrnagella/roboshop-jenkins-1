@@ -1,6 +1,6 @@
 - name: copy job config file
   ansible.builtin.template:
-    src: job.xml
+    src: jobconf.xml
     dest: /tmp/jobconf.xml
 
 - name: create jenkins jobs
