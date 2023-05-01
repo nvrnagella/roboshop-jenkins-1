@@ -7,6 +7,6 @@
   community.general.jenkins_job:
     config: "{{ lookup('file', '/tmp/sjob.xml') }}"
     name: "{{item.dir}}/{{item.name}}"
-    url: http://172.31.92.222:8080
+    url: http://172.31.84.112:8080
     password: "{{jenkins_password}}"
     user: admin
