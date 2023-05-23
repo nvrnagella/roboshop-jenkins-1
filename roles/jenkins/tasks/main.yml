@@ -10,7 +10,7 @@
 
 - name: including job creation task
   ansible.builtin.include_tasks:
-    file: s-pipeline.yml
+    file: mbranchpipeline.yml
   loop:
     - {name: "frontend", dir: "CIPipelines"}
     - {name: "catalogue", dir: "CIPipelines"}
