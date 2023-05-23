@@ -6,7 +6,7 @@
     password: "{{jenkins_password}}"
     user: admin
   loop:
-    - CIPipelines
+
 
 - name: including job creation task
   ansible.builtin.include_tasks:
