@@ -5,12 +5,12 @@
     url: http://172.31.2.94:8080
     password: "{{jenkins_password}}"
     user: admin
-  loop:
+  loop: "{{folders}}"
 
 
 - name: including job creation task
   ansible.builtin.include_tasks:
     file: mbranchpipeline.yml
-  loop:
+  loop: "{{ci_pipelines}}"
 
 
