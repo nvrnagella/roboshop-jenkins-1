@@ -1,3 +1,10 @@
 folders:
   - CIPipelines
 
+ci_pipelines:
+  - { name: "frontend", dir: "CIPipelines" }
+  - { name: "catalogue", dir: "CIPipelines" }
+  - { name: "cart", dir: "CIPipelines" }
+  - { name: "shipping", dir: "CIPipelines" }
+  - { name: "payment", dir: "CIPipelines" }
+  - { name: "user", dir: "CIPipelines" }
