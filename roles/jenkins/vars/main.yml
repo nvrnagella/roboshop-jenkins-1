@@ -1,5 +1,6 @@
 folders:
   - CIPipelines
+  - Infra
 
 ci_pipelines:
   - { name: "frontend", dir: "CIPipelines" }
@@ -8,3 +9,6 @@ ci_pipelines:
   - { name: "shipping", dir: "CIPipelines" }
   - { name: "payment", dir: "CIPipelines" }
   - { name: "user", dir: "CIPipelines" }
+
+pipelines:
+  - { name: "roboshop-infra", dir: "Infra" }
